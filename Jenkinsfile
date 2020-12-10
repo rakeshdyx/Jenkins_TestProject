@@ -21,9 +21,10 @@ pipeline {
                   steps {
                         echo "Deploying in Production Area"
                   }
-            stage('Deploy Production Replica')
+            }
+            stage('Deploy Replica Production') {
                   steps {
-                        echo "Deploying in Prod Replica"
+                        echo "Deploying in Replica Production Area"
                   }
             }
       }
